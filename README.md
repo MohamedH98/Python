@@ -1,2 +1,3 @@
 # Python
-Some of my python code
+
+Tracking the progress in my proficiency in Python.
