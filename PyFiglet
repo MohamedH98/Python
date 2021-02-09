@@ -1,0 +1,16 @@
+import pyfiglet
+from colorama import init
+from termcolor import colored
+init()
+
+valid_colors= ("red", "green", "yellow", "blue", "magenta", "cyan", "white")
+
+user= input("Write something: ")
+user_color= input("Pick a colour: ")
+
+if user_color not in valid_colors:
+	color= "magenta"
+
+art= pyfiglet.figlet_format(user)
+colored_ascii= colored(art, color=user_color)
+print(colored_ascii)
