@@ -1,3 +1,3 @@
 # Python
 
-Tracking the progress in my proficiency in Python.
+Tracking the progress of my proficiency in Python.
