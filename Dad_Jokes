@@ -1,0 +1,19 @@
+import requests
+from random import choice
+
+user_input= input("What would you like to search for? ")
+url= "https://icanhazdadjoke.com/search"
+res= requests.get(url,
+	headers= {"Accept": "application/json"},
+	params={"term": user_input}).json()
+
+results= res["results"]
+num_jokes= res["total_jokes"]
+
+if num_jokes > 1:
+	print(choice(results)['joke'])
+elif num_jokes == 1:
+	print(f"There is only one joke about {user_input}, so here you go!\n")
+	print(res["results"] [0] ['joke'])
+else:
+	print(f"Sorry, there are no {user_input} jokes")
