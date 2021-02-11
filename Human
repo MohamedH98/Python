@@ -4,10 +4,8 @@ class Human:
 		self.last = last
 		while age <= 0:
 			raise ValueError("age cant be negative")
-
 		self._age = age
 			
-
 	@property
 	def age(self):
 		return self._age
@@ -27,4 +25,4 @@ class Human:
 	def full_name(self, name):
 		self.first, self.last = name.split(" ")
 
-jane= Human("Jane", "Goodall", 34)
+Mohamed= Human("Mohamed", "X", 22)
